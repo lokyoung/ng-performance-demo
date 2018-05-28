@@ -1,0 +1,81 @@
+$blueberry: #693a8d;
+$mango: #fea635;
+$cherry-red: #f2001d;
+$azul: #1e77df;
+$greyish-brown: #444444;
+$brownish-grey: #666666;
+$greyish: #aaaaaa;
+$light-grey: #e8e7e4;
+$offwhite: #f1f1f1;
+$white: #fff;
+$black: #000;
+$split-line: #d7d7d7;
+$blueberry-light: rgba(104, 57, 141, 0.8);
+$priority-hot: #f1001e;
+$priority-normal: #f8960c;
+$priority-low: lightblue;
+$light-white: rgba(255, 255, 255, 0.3);
+$bg-grey: #fafafa;
+$bg-greyish: #ffffff;
+$border-grey: #cccccc;
+
+$desktop: "(min-width: 768px)";
+$laptop: "(min-width: 768px) and (max-width: 1400px)";
+$mobile: "(max-width: 767px)";
+
+.mobile-bar__menu {
+  margin: 0;
+  padding: 10px;
+  display: block;
+  width: 100%;
+
+  .nav-item {
+    > a {
+      color: $white;
+      display: inline-block;
+      width: 100%;
+      text-decoration: none;
+    }
+
+    > button {
+      color: $white;
+    }
+    margin: .4em 0;
+    padding: .4em 0;
+
+    .active {
+      font-weight: 700;
+    }
+
+    .tasks-button {
+      border: none;
+      background: none;
+      display: inline-flex;
+      height: 20px;
+      padding: 0;
+      cursor: pointer;
+
+        /* Safari */
+      display: -webkit-inline-flex;
+
+      @media (min-width: 768px) {
+        position: relative;
+        top: 3px;
+        left: 3px;
+      }
+    }
+
+  }
+
+  hr {
+    border-color: $split-line;
+    margin: 1rem .6em;
+  }
+}
+
+.mobile-bar {
+  height: auto;
+  padding: 0;
+  background: $blueberry;
+  border: none;
+}
