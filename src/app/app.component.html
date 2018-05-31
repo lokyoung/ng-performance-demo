@@ -1,14 +1,8 @@
-<p-sidebar [(visible)]="show"  [baseZIndex]="10000" position="top" styleClass="mobile-bar">
-  <ul class="mobile-bar__menu">
-    <li class="nav-item d-flex align-items-center">
-      <a >{{ 'Home' }}</a>
-    </li>
-    <li class="nav-item">
-      <a>{{'User List'}}</a>
-    </li>
+<div>
+  <span>{{count}}</span>
+  <button (click)="update()">Add</button>
+</div>
 
-  </ul>
-</p-sidebar>
-<span (click)="show = !show">
-  <i class="fa fa-bars" aria-hidden="true"></i>
-</span>
+<input type="text" [(ngModel)]="keyword" />
+<button (click)="search()">Search</button>
+<app-heroes [heroes]="heroes"></app-heroes>
